@@ -158,9 +158,9 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
+                <div id="hhsuite_project" class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <span class="helper"></span><img src="images/3_MPI-BPC_kurz_short/Office_MPI-BPC_kurz-short_RGB_small_900dpi.jpg" />
                     </div>
 
                     <div class="project-info">
@@ -169,14 +169,16 @@
                           and bioinformatics. It contains the most sensitive and fastest applications (HHsearch, HHblits)
                           for the frequent task to search for homologous proteins.
                           The method is based on the pairwise alignment of hidden Markov models (HMMs).
+
+                          <ul>
+                              <li>Moved the project from a local SVN to GitHub</li>
+                              <li>Refactoring legacy (spaghetti) code</li>
+                              <li>Refactoring the build pipeline with cmake</li>
+                              <li>Parallelization for HPC (Open MPI and OpenMP)</li>
+                              <li>Support scripts for a new protein structure format (mmcif)</li>
+                          </ul>
                         </p>
-                        <ul>
-                            <li>Moved the project from a local SVN to GitHub</li>
-                            <li>Refactoring legacy (spaghetti) code</li>
-                            <li>Refactoring the build pipeline with cmake</li>
-                            <li>Parallelization for HPC (Open MPI and OpenMP)</li>
-                            <li>Support scripts for a new protein structure format (mmcif)</li>
-                        </ul>
+
                         <a target="_blank" href="https://github.com/soedinglab/hh-suite">View Project</a>
                     </div>
                     <!-- End .project-info -->

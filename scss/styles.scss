@@ -645,14 +645,36 @@ footer {
     position: relative;
     max-width: 900px;
     margin: 0 auto 30px auto;
-    overflow: hidden;
+    overflow: auto;
     background: #fff;
     border-radius: 4px;
 }
 
-.project-image {
-    float: left;
+#hhsuite_project {
+    min-height: 300px;
 }
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.project-image {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    padding: 10px;
+    height: 100%;
+    img {
+        height: auto;
+        width: auto;
+        max-width: 280px;
+        max-height: 280px;
+        vertical-align: middle;
+    }
+}
+
 
 .project-info {
     position: absolute;
