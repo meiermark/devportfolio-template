@@ -157,35 +157,64 @@
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
-            <div class="row">
-                <div id="hhsuite_project" class="project shadow-large">
-                    <div class="project-image">
-                        <span class="helper"></span><img src="images/Office_MPI-BPC_kurz-short_RGB_small_900dpi.jpg" />
+            <div class="row vertical-align project shadow-large">
+                <div class="col-md-4 project-image">
+                    <div calss="thumbnail">
+                        <img class="img-responsive" src="images/Office_MPI-BPC_kurz-short_RGB_small_900dpi.jpg" />
                     </div>
-
-                    <div class="project-info">
-                        <h3>HHsuite</h3>
-                        <p> HHsuite is an open-source software package widely used in biochemistry
-                          and bioinformatics. It contains the most sensitive and fastest applications (HHsearch, HHblits)
-                          for the frequent task to search for homologous proteins.
-                          The method is based on the pairwise alignment of hidden Markov models (HMMs).
-
-                          <ul>
-                              <li>Moved the project from a local SVN to GitHub</li>
-                              <li>Refactoring legacy (spaghetti) code</li>
-                              <li>Refactoring the build pipeline with cmake</li>
-                              <li>Parallelization for HPC (Open MPI and OpenMP)</li>
-                              <li>Support scripts for a new protein structure format (mmcif)</li>
-                          </ul>
-                        </p>
-
-                        <a target="_blank" href="https://github.com/soedinglab/hh-suite">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
 
+                <div class="col-md-8 project-info">
+                    <h3>HHsuite</h3>
+                    <p> HHsuite is an open-source software package widely used in biochemistry
+                      and bioinformatics. It contains the most sensitive and fastest applications (HHsearch, HHblits)
+                      for the frequent task to search for homologous proteins.
+                      The method is based on the pairwise alignment of hidden Markov models (HMMs).
+                    </p>
+
+                    <ul>
+                        <li>Moved the project from a local SVN to GitHub</li>
+                        <li>Modernizing legacy (spaghetti) C++ code</li>
+                        <li>Refactoring the build pipeline with cmake</li>
+                        <li>Parallelization for HPC (Open MPI and OpenMP)</li>
+                        <li>Support scripts for a new protein structure format (mmcif)</li>
+                    </ul>
+
+                    <a target="_blank" href="https://github.com/soedinglab/hh-suite">View Project</a>
+                </div>
+                <!-- End .project-info -->
             </div>
+
+            <div class="row vertical-align project shadow-large">
+                <div class="col-md-4 project-image">
+                    <div calss="thumbnail">
+                        <img class="img-responsive" src="images/Office_MPI-BPC_kurz-short_RGB_small_900dpi.jpg" />
+                    </div>
+                </div>
+
+                <div class="col-md-8 project-info">
+                    <h3>PEnG</h3>
+                    <p>
+                        Fast discovery of statistically overrepresented motifs in a set of DNA sequences.
+                        Those sequence sets can be collected from ChIP-Seq experiments, so one protein binds to all
+                        these sequences. Therefore, all these sequences should have a binding motif for
+                        this protein. However, it is not known where the motif is, what length it has and
+                        if there are multiple motifs. In this simple but fast approach we test all possible
+                        k-mers, calculate their Pvalues and optimize the k-mers first to the degenerate IUPAC alphabet
+                        and later to position specific weight matrices (PWMs). It is supposed to be a fast prefilter for
+                        <a target="_blank" href="https://github.com/soedinglab/BaMMmotif">BaMMmotif</a>.
+                    </p>
+
+                    <ul>
+                        <li>Based on Bayesian statistics</li>
+                        <li>Written in C++, Python, R</li>
+                    </ul>
+
+                    <a target="_blank" href="https://github.com/soedinglab/PEnG-motif">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+
         </div>
     </div>
     <!-- End #projects -->
